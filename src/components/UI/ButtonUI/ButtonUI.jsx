@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const ButtonUI = () => {
+export const ButtonUI = ({Style, event, txtbutton="sumar"}) => {
   return (
-    <button>ButtonUI</button>
+    <button onClick={event} className={Style}>{txtbutton}</button>
   )
 }
 

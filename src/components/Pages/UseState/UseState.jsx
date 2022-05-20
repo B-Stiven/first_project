@@ -1,34 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Home } from '../Home/Home'
+import { ButtonUI } from '../../UI/ButtonUI/ButtonUI'
 
 
 
 export const UseState = () => {
     
+    const [counter, setcounter] = useState(0);
+
     function sumar(){
-        const numero = document.getElementById('numero');
-        let suma= Number(numero.textContent);
-        numero.textContent = suma + 1;
+        setcounter(counter+1)
     }
     function restar(){
-        const numero = document.getElementById('numero');
-        let suma= Number(numero.textContent);
-        numero.textContent = suma - 1;
+        setcounter(counter-1)
     }
     function Reset(){
-        var suma=0;
-        numero.textContent=suma;
+        setcounter(0)
     }
-     
+    function cambiarColor(){
+        let body =document.body;
+        body.classList.toggle("oscuro");
+    }
+
   return (
     <>
         <Home/>
-        <h1 id='numero'>0</h1>
+        <h1 >{counter}</h1>
         <hr />
-        <button id='sumar' onClick={sumar}>+</button>
-        <button id='Reset' >Reset</button>
-        <button id='Restar' onClick={restar}>-</button>
-
+        <ButtonUI 
+            style='btnsuma' 
+            event={sumar} 
+        />
+        <ButtonUI style='btnrest' 
+            event={Reset} 
+            txtbutton="Resetear"
+        />
+        <ButtonUI style='btnresta'
+            event={restar}
+            txtbutton="Restar"
+        />
+        <ButtonUI style='btnresta'
+            event={cambiarColor}
+            txtbutton="Cambiar Color"
+        />
     </>
 
   )
