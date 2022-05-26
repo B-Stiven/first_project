@@ -39,7 +39,7 @@ export const UseState = () => {
             event={restar}
             txtbutton="Restar"
         />
-        <ButtonUI style='btnresta'
+        <ButtonUI style='btncambiarcolor'
             event={cambiarColor}
             txtbutton="Cambiar Color"
         />

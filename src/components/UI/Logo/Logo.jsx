@@ -1,7 +1,6 @@
-import React from 'react'
-import logotipo from '../../../Images/logotipo.jpg'
+import React from 'react';
 
-export const Logo = () => {
+export const Logo = ({logotipo}) => {
   return (
     <img src={logotipo} alt="Logotipo" />
     
