@@ -24,3 +24,44 @@ body {
 h1{
   font-size: 25px;
 }
+
+main{
+    
+  width: 100%;
+}
+.k{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25rem 25rem 25rem 25rem;
+  
+}
+
+.card :hover{
+  transform: scale(1.1);
+}
+
+
+.ContainerCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 8px;
+  border-radius: 106px;
+  background: rgba(152, 157, 221, 0.492);
+  -webkit-box-shadow: 3px -1px 23px 14px rgba(0,0,0,0.55);
+  -moz-box-shadow: 3px -1px 23px 14px rgba(0,0,0,0.55);
+  box-shadow: 3px -1px 23px 14px rgba(0,0,0,0.55);
+}
+
+.busqueda {
+    
+  width: 50%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: black;
+   
+}
+.busqueda{
+   padding: 2%;
+} 
