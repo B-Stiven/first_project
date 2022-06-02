@@ -5,10 +5,11 @@ export const ContactUS
  = () => {
 
   const sendEmail =(event) =>{
-    event.preventDevault();
-    emailjs.sendForm('service_5m1h0xb','template_votlset', event.target,'')
+    event.preventDefault();
+    emailjs.sendForm('service_5m1h0xb','template_votlset', event.target,'B3x8MtrOVLom5lQ-d')
     .then(response =>console.log(response))
     .catch(error => console.log(error))
+    
 
   }
 

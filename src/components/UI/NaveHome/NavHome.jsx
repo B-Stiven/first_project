@@ -11,6 +11,7 @@ export const NavHome = ({textNav, ref}) => {
         <button className='boton'><Link to="/useEffect">UseEffect</Link></button>
         <button className='boton'><Link to="/contactUS">ContactUS</Link></button>
         <button className='boton'><Link to="/rickAndmorty">Rick And Morty</Link></button>
+        <button className='boton'><Link to="/tenor">Gifs</Link></button>
     </nav>
   )
 }
