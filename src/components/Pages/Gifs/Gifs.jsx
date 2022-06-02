@@ -2,19 +2,26 @@ import React, { useEffect, useState } from 'react'
 
 export const Gifs = () => {
     const inputGif=document.getElementById('inputgif'); 
+    const mainContainer=document.getElementById("mainContainer");
     inputGif.addEventListener('keyup',customGif);
 
-    const [card, detcard]= useState([]);
+    const [card, setcard]= useState([]);
 
-    // useEffect{
+    const change =()=>{
+        setcard(!card);
+    } 
 
-    // }[card]
+    useEffect( ()=>{
+        if(card){
+        inputGif.addEventListener('keyup',customGif);
+    }
+    })
 
     function customGif(event){
         const URL = "https://g.tenor.com/v1/search?";
         const Key = "S9Z646TX5T38";
         const query = `q=${event.target.value}`;
-        const limit = "&limit=15";
+        const limit = "&limit=5";
     
         fetch(`${URL}${query}&key=${Key}${limit}`)
         .then(response => response.json())
@@ -43,7 +50,7 @@ export const Gifs = () => {
     <div>
         <h1>Gifs</h1>
         <div className='mainContainer'></div>
-        <input type="text" className='inputgif' id='inputgif' />
+        <input type="text" className='inputgif' id='inputgif' onKeyDown={change} />
     </div>
     
   )
