@@ -16,7 +16,7 @@ function App() {
       <Routes>    
         <Route path='/' element={<Home/>}/>
         <Route path='/useState' element={<UseState/>}/>
-        <Route path='/useCustom' element={<ContactUS/>}/>
+        <Route path='/contactUS' element={<ContactUS/>}/>
         <Route path='/useEffect' element={<AboutUS/>}/>
         <Route path='/contadorImagen' element={<ContadorImagen/>}/>
         <Route path='/rickAndmorty' element={<RickAndMorty />}/>
