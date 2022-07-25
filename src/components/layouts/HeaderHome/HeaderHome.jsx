@@ -9,9 +9,7 @@ import logo from '../../../Images/logotipo.jpg';
 export const HeaderHome = () => {
   return(
     <div>
-        <Logo logotipo={logo}/>
         <NavHome/>
-        <DarkMode></DarkMode>
     </div>
   )
 }

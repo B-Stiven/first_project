@@ -1,7 +1,7 @@
 import React from 'react'
-import ButtonUI from '../../UI/ButtonUI/ButtonUI';
+import ButtonUI from '../ButtonUI/ButtonUI';
 import { useState } from 'react'
-import { Logo } from '../../UI/Logo/Logo';
+import { Logo } from '../Logo/Logo';
 import logo from '../../../Images/logo2.jpg';
 
 
